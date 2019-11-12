@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Bootstrap 4 Example</title>
+        <title>Home Page and Personal Information</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="custom_stylesheet.css">
+        <script src="https://kit.fontawesome.com/d5c6ce3996.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </head>
 
     <body>
+        <!--Pop-up alert that the site is under construction.-->
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Hello!</strong> My personal website is currently under construction. Come back in the future to see what I've added!
+        </div>
+
+        <!-- Sidebar -->
+        <div class="Sidebar">
+            <a href="#home"><i class="fas fa-home"></i></i>Home</a>
+            <a href="#work-experience"><i class="fas fa-briefcase"></i>Work Experience</a>
+            <a href="#tutorials"><i class="fas fa-book"></i>Tutorials</a>
+        </div>
+
         <div class="container-fluid">
-            <h1>My First Bootstrap Page</h1>
-            <p>This is some text.</p>
+            <h1>Noah's Website</h1>
+            <p>Currently under construction.</p>
         </div>
     </body>
 </html>
