@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Home Page and Personal Information</title>
+        <title>Home Page</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -10,25 +10,66 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="control.js"></script>
     </head>
 
     <body>
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li>
+                        <a href="#">
+                            <div class="sidebar-icon">
+                                <i class="fas fa-home fa-sm"></i>
+                            </div>
+                            <div class="sidebar-text">
+                                Home
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#work-experience">
+                            <div class="sidebar-icon">
+                                <i class="fas fa-briefcase fa-sm"></i>
+                            </div>
+                            <div class="sidebar-text">
+                                Experience
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tutorials">
+                            <div class="sidebar-icon">
+                                <i class="fas fa-book fa-sm"></i>
+                            </div>
+                            <div class="sidebar-text">
+                                Tutorials
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+          
+        <!-- Page Content -->
         <!--Pop-up alert that the site is under construction.-->
-        <div class="alert alert-success alert-dismissible">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <strong>Hello!</strong> My personal website is currently under construction. Come back in the future to see what I've added!
-        </div>
-
-        <!-- Sidebar -->
-        <div class="Sidebar">
-            <a href="#home"><i class="fas fa-home"></i></i>Home</a>
-            <a href="#work-experience"><i class="fas fa-briefcase"></i>Work Experience</a>
-            <a href="#tutorials"><i class="fas fa-book"></i>Tutorials</a>
-        </div>
-
-        <div class="container-fluid">
-            <h1>Noah's Website</h1>
-            <p>Currently under construction.</p>
-        </div>
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="alert alert-info alert-dismissible">
+                                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                <center><strong>Hello!</strong> My personal website is currently under construction. Come back in the future to see what I've added!</center>
+                            </div>
+                            <a href="#" class="btn" id="menu-toggle"><i class="fas fa-bars"></i></a>
+                            <h1 class="under-construction">UNDER</h1>
+                            <h1 class="under-construction">CONSTRUCTION</h1>
+                            <!--h1 class="text-center">Noah's Website</h1>
+                            <p class="text-center">Thanks for visiting!</p-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>          
     </body>
 </html>
