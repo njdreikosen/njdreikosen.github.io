@@ -14,79 +14,140 @@
     </head>
 
     <body>
-        <div id="wrapper">
-            <!-- Sidebar -->
-            <div id="sidebar-wrapper">
-                <ul class="sidebar-nav">
+        <div class="navigation">
+            <div class="brand">
+                <a href="index.html">Home</a>
+            </div>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
                     <li>
-                        <img src="profile_portrait.jpg" alt="Profile Portrait"
-                        class="profile-image">
-                        <div class="profile-text">
-                            njdreikosen@wisc.edu
-                        </div>
-                        <div class="profile-text">
-                            (715) 432-1690
-                        </div>
-                        <hr color="#ccc">
+                        <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="index.html">
-                            <div class="sidebar-icon">
-                                <i class="fas fa-home fa-sm"></i>
-                            </div>
-                            <div class="sidebar-text">
-                                Home
-                            </div>
-                        </a>
+                        <a href="experience.html">Experience</a>
                     </li>
                     <li>
-                        <a href="#">
-                            <div class="sidebar-icon">
-                                <i class="fas fa-briefcase fa-sm"></i>
-                            </div>
-                            <div class="sidebar-text">
-                                Experience
-                            </div>
-                        </a>
+                        <a href="projects.html">Projects</a>
                     </li>
                     <li>
-                        <a href="projects.html">
-                            <div class="sidebar-icon">
-                                <i class="fas fa-atom fa-sm"></i>
-                            </div>
-                            <div class="sidebar-text">
-                                Projects
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tutorials.html">
-                            <div class="sidebar-icon">
-                                <i class="fas fa-book fa-sm"></i>
-                            </div>
-                            <div class="sidebar-text">
-                                Tutorials
-                            </div>
-                        </a>
+                        <a href="tutorials.html">Tutorials</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="#!">Tutorial #1</a>
+                            </li>
+                            <li>
+                                <a href="#!">Tutorial #2</a>
+                            </li>
+                            <li>
+                                <a href="#!">Tutorial #3</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
-            </div>
-          
-        <!-- Page Content -->
-        <!--Pop-up alert that the site is under construction.-->
+            </nav>
+        </div>
+
+        <div id="wrapper">
+            <!-- Page Content -->
             <div id="page-content-wrapper">
                 <div class="container-fluid">
+
+                    <!--X-ES Work Experience-->
                     <div class="row">
-                        <div class="col-lg-12">
-                            <div class="alert alert-info alert-dismissible">
-                                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                                <center><strong>Hello!</strong> My personal website is currently under construction. Come back in the future to see what I've added!</center>
+                        <div class="experience-entry">
+                            <img src="images/xes_logo.png" alt="X-ES">
+                            <span style="display: block; overflow-wrap: normal; float: left;">
+                                <div class="experience-position"><b>Extreme Engineering Solutions</b></div>
+                                <div class="experience-company"><i>Hardware Test Engineer</i></div>
+                            </span>
+                            <div class="experience-location">
+                                <p>
+                                    June 2019 - Present<br>
+                                    Madison, WI
+                                </p>
                             </div>
-                            <a href="#" class="btn" id="menu-toggle"><i class="fas fa-bars"></i></a>
-                            <h1 class="under-construction">PROJECT PAGE</h1>
-                            <h1 class="under-construction">UNDER CONSTRUCTION</h1>
-                            <!--h1 class="text-center">Noah's Website</h1>
-                            <p class="text-center">Thanks for visiting!</p-->
+                            <ul>
+                                <li>Plan and execure circuit and product level testing.</li>
+                                <li>Investigate circuit failures and debug unexpected behavior.</li>
+                                <li>Document test results and comment on any findings.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--John Deere Work Experience-->
+                    <div class="row">
+                        <div class="experience-entry">
+                            <img src="images/deere_logo.png" alt="John Deere">
+                            <span style="overflow-wrap: normal; float: left;">
+                                <div class="experience-position"><b>John Deere GCHPDC</b></div>
+                                <div class="experience-company"><i>Product Engineering Intern</i></div>
+                            </span>
+                            <div class="experience-location">
+                                <p>
+                                    May 2018 - August 2018<br>
+                                    Moline, IL
+                                </p>
+                            </div>
+                            <ul>
+                                <li>Tested the first iteration of a new combine application.</li>
+                                <li>Assisted with testing on new combine prototypes and software releases.</li>
+                                <li>Assisted other functional groups with text fixtures and minor projects.</li>
+                            </ul>                
+                        </div>
+                    </div>
+
+                    <!--Wisconsin DHS Work Experience-->
+                    <div class="row">
+                        <div class="experience-entry">
+                            <img src="images/dhs_logo.png" alt="Wisconsin DHS">
+                            <span style="display: block; overflow-wrap: normal; float: left;">
+                                <div class="experience-position"><b>Wisconsin DHS</b></div>
+                                <div class="experience-company"><i>CADD Specialist Intern</i></div>
+                            </span>
+                            <div class="experience-location">
+                                <p>
+                                    May 2017 - May 2018, August 2018 - June 2019<br>
+                                    Madison, WI
+                                </p>
+                            </div>
+                            <ul>
+                                <li>Created and modified AutoCAD files containing floor plans and new project plans.</li>
+                                <li>Assisted with field work and project management.</li>
+                                <li>Maintained and updated a drawing database for the department.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <br>
+                    <hr>
+                    <br>
+
+                    <div class="col-sm-12">
+                        <div class="page-title">Other Experience</div>
+                    </div>
+
+                    <!--Wausau Country Club Work Experience-->
+                    <div class="row">
+                        <div class="experience-entry">
+                            <img src="images/wcc_logo.png" alt="Wausau Country Club">
+                            <div style="display: block;">
+                            <span style="display: block; overflow-wrap: normal; float: left;">
+                                <div class="experience-position"><b>Wausau Country Club</b></div>
+                                <div class="experience-company"><i>Caddy/Outdoor Guest<br>Services Attendant</i></div>
+                            </span>
+                            <div class="experience-location">
+                                <p>
+                                    Spring through Fall, 2009 - 2016<br>
+                                    Schofield, WI
+                                </p>
+                            </div>
+                            <ul>
+                                <li>Awarded the Chick Evans Caddie Scholarship for outstanding character, academic achievements, and work ethic.</li>
+                                <li>Managed outdoor golf bag room and most outside areas, including the golf course and driving range, as well as assisted members and guests with any required services.</li>
+                                <li>Assisted Head Golf Pro, and managed all employees in the golf department in absence of the Head Golf Pro.</li>
+                            </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
