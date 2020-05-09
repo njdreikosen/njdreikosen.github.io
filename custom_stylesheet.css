@@ -38,6 +38,7 @@ header {
     margin: 0 auto;
     position: fixed;
     width: 100%;
+    border-bottom: 5px solid #383f47;
   }
   
   .brand {
@@ -45,9 +46,9 @@ header {
     padding-left: 20px;
     float: left;
     line-height: 70px;
-    text-transform: uppercase;
-    font-size: 1.4em;
+    font-size: 24px;
   }
+
   .brand a,
   .brand a:visited {
     color: #383f47;
@@ -70,26 +71,32 @@ header {
   nav ul li {
     float: left;
     position: relative;
+    font-size: 24px;
   }
+
   nav ul li a,
   nav ul li a:visited {
     display: block;
     padding: 0 20px;
-    line-height: 70px;
+    line-height: 65px;
     background: #ccc;
     color: #383f47;
     text-decoration: none;
   }
+
   nav ul li a:hover,
   nav ul li a:visited:hover {
     background: #383f47;
     color: #ccc;
+    border-bottom: 5px solid #383f47;
   }
+
   nav ul li a:not(:only-child):after,
   nav ul li a:visited:not(:only-child):after {
     padding-left: 4px;
     content: ' ▾';
   }
+
   nav ul li ul li {
     min-width: 190px;
   }
@@ -114,6 +121,7 @@ header {
     background: #ccc;
     height: 70px;
     width: 70px;
+    border-bottom: 5px solid #383f47;
   }
   
   @media only screen and (max-width: 798px) {
@@ -335,8 +343,9 @@ header {
   background-color: #ccc;
   width: 80%;
   margin-left: 10%;
-  margin-top: 5%;
+  margin-bottom: 20px;
   border-radius: 25px;
+
 }
 
 .about-h1 {
@@ -352,6 +361,11 @@ header {
 }
 
 .about-entry li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+.about-entry p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
 }
