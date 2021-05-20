@@ -1,0 +1,111 @@
+/* Content Styling */
+@keyframes slidein {
+  0% {
+    top: -500px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+@keyframes slideout {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -500px;
+    opacity: 0;
+  }
+}
+body {
+  background: #eee;
+  font-family: "Tahoma";
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body #scene {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 1000px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+}
+body #scene #left-zone {
+  background: #fff;
+  height: 75%;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  /*align-items: flex-start;
+  justify-content: left;*/
+}
+body #scene #left-zone #index-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: auto 20px auto 20px;
+  flex: 0;
+}
+body #scene #left-zone h2, body #scene #left-zone p {
+  margin: 10px auto auto auto;
+}
+body #scene #middle-border {
+  background-color: #eee;
+  height: 75%;
+  flex-grow: 1;
+  min-width: 2px;
+  max-width: 2px;
+  z-index: 0;
+}
+body #scene #right-zone {
+  background: #fff;
+  height: 100%;
+  flex-grow: 0;
+}
+body #scene #right-zone #content {
+  /*position: relative;
+  left: $menu-width;
+  top: -$scene-height;*/
+  width: 650px;
+  height: 500px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+body #scene #right-zone #content h1 {
+  color: #0c449c;
+  font-size: 40px;
+  margin: auto auto 20px auto;
+}
+body #scene #right-zone #content p {
+  font-size: 20px;
+  width: 70%;
+  margin: 0px auto auto auto;
+  flex: 0;
+}
+body #scene #right-zone #content::-webkit-scrollbar {
+  width: 10px;
+}
+body #scene #right-zone #content::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+body #scene #right-zone #content::-webkit-scrollbar-thumb {
+  background-color: #0c449c;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,304 @@
+/* Content Styling */
+@keyframes slidein {
+  0% {
+    top: -500px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+@keyframes slideout {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -500px;
+    opacity: 0;
+  }
+}
+body {
+  background: #eee;
+  font-family: "Tahoma";
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body #scene {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 1000px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+}
+body #scene #left-zone {
+  background: #fff;
+  height: 75%;
+  flex-grow: 0;
+  display: flex;
+  width: 350px;
+  align-items: center;
+  justify-content: left;
+}
+body #scene #left-zone .list {
+  display: flex;
+  list-style: none;
+  align-content: stretch;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+body #scene #left-zone .list li.item input[type=radio] {
+  display: none;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label {
+  display: block;
+  opacity: 0.5;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label:first-letter {
+  text-transform: uppercase;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label.label_education:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url("images/education.png");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label.label_skills:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url("images/skills.png");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label.label_hobbies:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url("images/hobbies.png");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content {
+  position: absolute;
+  left: 350px;
+  top: -500px;
+  width: 650px;
+  height: 500px;
+  overflow-y: auto;
+  animation-duration: 0.75s;
+  animation-name: slideout;
+  animation-timing-function: ease-out;
+  display: flex;
+  flex-direction: column;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_education .picto {
+  height: 100px;
+  min-height: 100px;
+  width: 100px;
+  background-image: url("images/education.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto auto 0px auto;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_education h1 {
+  color: #c5050c;
+  font-size: 30px;
+  margin: 10px auto 20px auto;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_education h2 {
+  font-size: 20px;
+  margin: 0px auto 0px 10%;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_education p {
+  font-size: 16px;
+  margin: 0px auto 0px auto;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_education ul {
+  font-size: 18px;
+  margin: 0px auto auto 10%;
+  padding: 20px;
+  max-width: 80%;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_education::-webkit-scrollbar {
+  width: 10px;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_education::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_education::-webkit-scrollbar-thumb {
+  background-color: #c5050c;
+  border-radius: 5px;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_skills .picto {
+  height: 100px;
+  min-height: 100px;
+  width: 100px;
+  background-image: url("images/skills.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto auto 0px auto;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_skills h1 {
+  color: #22B14C;
+  font-size: 30px;
+  margin: 10px auto 20px auto;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_skills h2 {
+  font-size: 20px;
+  margin: 0px auto 0px 10%;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_skills p {
+  font-size: 16px;
+  margin: 0px auto 0px auto;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_skills ul {
+  font-size: 18px;
+  margin: 0px auto auto 10%;
+  padding: 20px;
+  max-width: 80%;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_skills::-webkit-scrollbar {
+  width: 10px;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_skills::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_skills::-webkit-scrollbar-thumb {
+  background-color: #22B14C;
+  border-radius: 5px;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_hobbies .picto {
+  height: 100px;
+  min-height: 100px;
+  width: 100px;
+  background-image: url("images/hobbies.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto auto 0px auto;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_hobbies h1 {
+  color: #0000ff;
+  font-size: 30px;
+  margin: 10px auto 20px auto;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_hobbies h2 {
+  font-size: 20px;
+  margin: 0px auto 0px 10%;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_hobbies p {
+  font-size: 16px;
+  margin: 0px auto 0px auto;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_hobbies ul {
+  font-size: 18px;
+  margin: 0px auto auto 10%;
+  padding: 20px;
+  max-width: 80%;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_hobbies::-webkit-scrollbar {
+  width: 10px;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_hobbies::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_hobbies::-webkit-scrollbar-thumb {
+  background-color: #0000ff;
+  border-radius: 5px;
+}
+body #scene #left-zone .list li.item input[type=radio]:checked ~ label {
+  opacity: 1;
+  animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_education {
+  color: #c5050c;
+  border-right: solid 4px #c5050c;
+}
+body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_skills {
+  color: #22B14C;
+  border-right: solid 4px #22B14C;
+}
+body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_hobbies {
+  color: #0000ff;
+  border-right: solid 4px #0000ff;
+}
+body #scene #left-zone .list li.item input[type=radio]:checked ~ .content {
+  animation-duration: 0.75s;
+  animation-name: slidein;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+body #scene #middle-border {
+  background-color: #eee;
+  height: 75%;
+  flex-grow: 1;
+  max-width: 2px;
+  z-index: 0;
+}
+body #scene #right-zone {
+  background: #fff;
+  height: 100%;
+  flex-grow: 3;
+}
+@media only screen and (min-height: 650px) {
+  body #scene-title {
+    position: absolute;
+    height: 60px;
+    left: 0;
+    right: 0;
+    margin: auto 0 auto 0;
+    padding-top: 10px;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    color: #204060;
+  }
+  body #scene {
+    top: 30px;
+  }
+}
+@media only screen and (max-height: 650px) {
+  body #scene-title {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

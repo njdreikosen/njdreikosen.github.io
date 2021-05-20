@@ -1,75 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Home</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="custom_stylesheet.css">
-        <script src="https://kit.fontawesome.com/d5c6ce3996.js" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="control.js"></script>
-    </head>
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="navigation.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
 
-    <body>
-        <div class="navigation">
-            <div class="brand">
-                <a href="">Home</a>
-            </div>
-            <nav>
-                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-                <ul class="nav-list">
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="experience.html">Experience</a>
-                    </li>
-                    <li>
-                        <a href="projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#!">Tutorials</a>
-                        <ul class="nav-dropdown">
-                            <li>
-                                <a href="#!">Tutorial #1</a>
-                            </li>
-                            <li>
-                                <a href="#!">Tutorial #2</a>
-                            </li>
-                            <li>
-                                <a href="#!">Tutorial #3</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+  <body>
+    <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
+    <label for="page-nav-toggle">
+      <svg class="icon--menu-toggle" viewBox="0 0 60 30">
+        <g class="icon-group">
+          <g class="icon--menu">
+            <path d="M 6 0 L 54 0" />
+            <path d="M 6 15 L 54 15" />
+            <path d="M 6 30 L 54 30" />
+          </g>
+          <g class="icon--close">
+            <path d="M 15 0 L 45 30" />
+            <path d="M 15 30 L 45 0" />
+          </g>
+        </g>
+      </svg>
+    </label>
+    <nav class="main-navigation">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#!">Tutorials</a></li>
+      </ul>
+    </nav>
+    <div id="scene">
+      <div id="left-zone">
+        <img id="index-img" src="images/profile_portrait.jpg" alt="Profile">
+        <h2>Noah Dreikosen</h2>
+        <p>email: ndreikosen@gmail.com</p>
+        <p>github: https://github.com/njdreikosen</p>
+      </div>
+      <div id="middle-border"></div>
+      <div id="right-zone">
+        <div id="content">
+          <h1>Hello!</h1>
+          <p>I'm Noah Dreikosen, an engineer with a passion for design, and a love of learning. I graduated from the University of Wisconsin - Madison with B.S. in Mechanical Engineering, as well as Computer Science.<br><br>If you have any questions or would like a copy of my resume, please email me at ndreikosen@gmail.com.</p>
         </div>
-    <div id="wrapper">
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-
-                <!--Home Page-->
-                <div class="row">
-                    <div class="index-entry">
-                        <img class="index-img" src="images/profile_portrait.jpg" alt="Profile">
-                        <h1 class="index-h1">Hello!</h1>
-                        <p class="index-p">
-                            I'm Noah Dreikosen, an engineering with a passion for design, and a love of learning.
-                            I graduated from the University of Wisconsin - Madison with B.S. in Mechanical Engineering,
-                            as well as Computer Science.<br>
-                        </p>
-                        <br>
-                        <p class="index-p" style="text-align: center;">
-                            If you have any questions or would like a copy of my resume, please email me at example@gmail.com.
-                        </p>
-                      </div>
-                </div>
-            </div>
-        </div>
-    </div>          
-    </body>
+      </div>
+    </div>
+  </body>
 </html>

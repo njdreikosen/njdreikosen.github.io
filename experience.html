@@ -1,149 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Work Experience</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="custom_stylesheet.css">
-        <script src="https://kit.fontawesome.com/d5c6ce3996.js" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="control.js"></script>
-    </head>
+  <head>
+    <title>Work Experience</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="navigation.css">
+    <link rel="stylesheet" type="text/css" href="experience.css">
+  </head>
 
-    <body>
-        <div class="navigation">
-            <div class="brand">
-                <a href="index.html">Home</a>
+  <body>
+    <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
+    <label for="page-nav-toggle">
+      <svg class="icon--menu-toggle" viewBox="0 0 60 30">
+        <g class="icon-group">
+          <g class="icon--menu">
+            <path d="M 6 0 L 54 0" />
+            <path d="M 6 15 L 54 15" />
+            <path d="M 6 30 L 54 30" />
+          </g>
+          <g class="icon--close">
+            <path d="M 15 0 L 45 30" />
+            <path d="M 15 30 L 45 0" />
+          </g>
+        </g>
+      </svg>
+    </label>
+    <nav class="main-navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#!">Tutorials</a></li>
+      </ul>
+    </nav>
+    <div id="scene-title">Experience</div>
+    <div id="scene">
+      <div id="left-zone">
+        <ul class="list">
+          <li class="item">
+            <input type="radio" id="radio_xes" name="basic_carousel" value="X-ES" checked="checked"/>
+            <label class="label_xes" for="radio_xes">X-ES</label>
+            <div class="content content_xes">
+              <span class="picto"></span>
+              <h1>Extreme Engineering Solutions</h1>
+              <h2>Hardware Test Engineer</h2>
+              <p>June 2019 - Present | Madison, WI</p>
+              <ul>
+                <li>Plan and execute circuit and product level testing.</li>
+                <li>Investigate circuit failures and debug unexpected behavior.</li>
+                <li>Document test results and comment on any findings.</li>
+              </ul>
             </div>
-            <nav>
-                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-                <ul class="nav-list">
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="experience.html">Experience</a>
-                    </li>
-                    <li>
-                        <a href="projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#!">Tutorials</a>
-                        <ul class="nav-dropdown">
-                            <li>
-                                <a href="#!">Tutorial #1</a>
-                            </li>
-                            <li>
-                                <a href="#!">Tutorial #2</a>
-                            </li>
-                            <li>
-                                <a href="#!">Tutorial #3</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-        <div id="wrapper">
-            <!-- Page Content -->
-            <div id="page-content-wrapper">
-                <div class="container-fluid">
-
-                    <!--X-ES Work Experience-->
-                    <div class="row">
-                        <div class="experience-entry">
-                            <img src="images/xes_logo.png" alt="X-ES">
-                            <span style="display: block; overflow-wrap: normal; float: left;">
-                                <div class="experience-position"><b>Extreme Engineering Solutions</b></div>
-                                <div class="experience-company"><i>Hardware Test Engineer</i></div>
-                            </span>
-                            <div class="experience-location">
-                                <p>
-                                    June 2019 - Present<br>
-                                    Madison, WI
-                                </p>
-                            </div>
-                            <ul>
-                                <li>Plan and execure circuit and product level testing.</li>
-                                <li>Investigate circuit failures and debug unexpected behavior.</li>
-                                <li>Document test results and comment on any findings.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!--John Deere Work Experience-->
-                    <div class="row">
-                        <div class="experience-entry">
-                            <img src="images/deere_logo.png" alt="John Deere">
-                            <span style="overflow-wrap: normal; float: left;">
-                                <div class="experience-position"><b>John Deere GCHPDC</b></div>
-                                <div class="experience-company"><i>Product Engineering Intern</i></div>
-                            </span>
-                            <div class="experience-location">
-                                <p>
-                                    May 2018 - August 2018<br>
-                                    Moline, IL
-                                </p>
-                            </div>
-                            <ul>
-                                <li>Tested the first iteration of a new combine application.</li>
-                                <li>Assisted with testing on new combine prototypes and software releases.</li>
-                                <li>Assisted other functional groups with text fixtures and minor projects.</li>
-                            </ul>                
-                        </div>
-                    </div>
-
-                    <!--Wisconsin DHS Work Experience-->
-                    <div class="row">
-                        <div class="experience-entry">
-                            <img src="images/dhs_logo.png" alt="Wisconsin DHS">
-                            <span style="display: block; overflow-wrap: normal; float: left;">
-                                <div class="experience-position"><b>Wisconsin DHS</b></div>
-                                <div class="experience-company"><i>CADD Specialist Intern</i></div>
-                            </span>
-                            <div class="experience-location">
-                                <p>
-                                    May 2017 - May 2018, August 2018 - June 2019<br>
-                                    Madison, WI
-                                </p>
-                            </div>
-                            <ul>
-                                <li>Created and modified AutoCAD files containing floor plans and new project plans.</li>
-                                <li>Assisted with field work and project management.</li>
-                                <li>Maintained and updated a drawing database for the department.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!--Wausau Country Club Work Experience-->
-                    <div class="row">
-                        <div class="experience-entry">
-                            <img src="images/wcc_logo.png" alt="Wausau Country Club">
-                            <div style="display: block;">
-                            <span style="display: block; overflow-wrap: normal; float: left;">
-                                <div class="experience-position"><b>Wausau Country Club</b></div>
-                                <div class="experience-company"><i>Caddy/Outdoor Guest<br>Services Attendant</i></div>
-                            </span>
-                            <div class="experience-location">
-                                <p>
-                                    Spring through Fall, 2009 - 2016<br>
-                                    Schofield, WI
-                                </p>
-                            </div>
-                            <ul>
-                                <li>Awarded the Chick Evans Caddie Scholarship for outstanding character, academic achievements, and work ethic.</li>
-                                <li>Managed outdoor golf bag room and most outside areas, including the golf course and driving range, as well as assisted members and guests with any required services.</li>
-                                <li>Assisted Head Golf Pro, and managed all employees in the golf department in absence of the Head Golf Pro.</li>
-                            </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </li>
+          <li class="item">
+            <input type="radio" id="radio_deere" name="basic_carousel" value="John Deere"/>
+            <label class="label_deere" for="radio_deere">John Deere</label>
+            <div class="content content_deere">
+              <span class="picto"></span>
+              <h1>John Deere</h1>
+              <h2>Product Engineering Intern</h2>
+              <p>May 2018 - Aug. 2018 | Moline, IL</p>
+              <ul>
+                <li>Tested the first iteration of a new combine application.</li>
+                <li>Assisted with testing on new combine prototypes and software releases.</li>
+                <li>Assisted other functional groups with text fixtures and minor projects.</li>
+              </ul>
             </div>
-        </div>          
-    </body>
+          </li>
+          <li class="item">
+            <input type="radio" id="radio_dhs" name="basic_carousel" value="WI DHS"/>
+            <label class="label_dhs" for="radio_dhs">WI DHS</label>
+            <div class="content content_dhs">
+              <span class="picto"></span>
+              <h1>Department of Health Services</h1>
+              <h2>CADD Specialist Intern</h2>
+              <p>May 2017 - May 2018 | Aug. 2018 - June 2019 | Madison, WI</p>
+              <ul>
+                <li>Created and modified AutoCAD files containing floor plans and new project plans.</li>
+                <li>Assisted with field work and project management.</li>
+                <li>Maintained and updated a drawing database for the department.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <input type="radio" id="radio_wcc" name="basic_carousel" value="Wausau CC"/>
+            <label class="label_wcc" for="radio_wcc">Wausau CC</label>
+            <div class="content content_wcc">
+              <span class="picto"></span>
+              <h1>Wausau Country Club</h1>
+              <h2>Caddy | Outdoor Guest Services Attendant</h2>
+              <p>Spring through Fall, 2009 - 2016 | Schofield, WI</p>
+              <ul>
+                <li>Awarded the Chick Evans Caddie Scholarship for outstanding character, academic achievements, and work ethic.</li>
+                <li>Managed outdoor golf bag room and most outside areas, including the golf course and driving range, as well as assisted members and guests with any required services.</li>
+                <li>Assisted Head Golf Pro, and managed all employees in the golf department in absence of the Head Golf Pro.</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="middle-border"></div>
+      <div id="right-zone"></div>
+    </div>
+  </body>
 </html>

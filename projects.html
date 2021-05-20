@@ -1,172 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Projects</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="custom_stylesheet.css">
-        <script src="https://kit.fontawesome.com/d5c6ce3996.js" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="control.js"></script>
-    </head>
+  <head>
+    <title>Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="navigation.css">
+    <link rel="stylesheet" type="text/css" href="projects.css">
+  </head>
 
-    <body>
-        <div class="navigation">
-            <div class="brand">
-                <a href="index.html">Home</a>
+  <body>
+    <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
+    <label for="page-nav-toggle">
+      <svg class="icon--menu-toggle" viewBox="0 0 60 30">
+        <g class="icon-group">
+          <g class="icon--menu">
+            <path d="M 6 0 L 54 0" />
+            <path d="M 6 15 L 54 15" />
+            <path d="M 6 30 L 54 30" />
+          </g>
+          <g class="icon--close">
+            <path d="M 15 0 L 45 30" />
+            <path d="M 15 30 L 45 0" />
+          </g>
+        </g>
+      </svg>
+    </label>
+    <nav class="main-navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Experience</a></li>
+        <li><a href="#!">Tutorials</a></li>
+      </ul>
+    </nav>
+    <div id="scene-title">Projects</div>
+    <div id="scene">
+      <div id="left-zone">
+        <ul class="list">
+          <li class="item">
+            <input type="radio" id="radio_las" name="basic_carousel" value="Local App Server" checked="checked"/>
+            <label class="label_las" for="radio_las">Local App Server</label>
+            <div class="content content_las">
+              <span class="picto"></span>
+              <h1>Local Application Server</h1>
+              <h2>Independent</h2>
+              <p>
+                Description pending.
+              </p>
             </div>
-            <nav>
-                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-                <ul class="nav-list">
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="experience.html">Experience</a>
-                    </li>
-                    <li>
-                        <a href="projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#!">Tutorials</a>
-                        <ul class="nav-dropdown">
-                            <li>
-                                <a href="#!">Tutorial #1</a>
-                            </li>
-                            <li>
-                                <a href="#!">Tutorial #2</a>
-                            </li>
-                            <li>
-                                <a href="#!">Tutorial #3</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-        <div id="wrapper">
-            <!-- Page Content -->
-            <div id="page-content-wrapper">
-                <div class="container-fluid">
-
-                    <!--3D Printing Projects-->
-                    <div class="row">
-                        <div class="project-entry">
-                            <img src="images/3d-printer.png" alt="3D Printer">
-                            <div>
-                                <div class="project-name"><b>3D Printer Setup and Misc. Prints</b></div>
-                                <div class="project-team"><i>Independent</i></div>
-                                <p>
-                                    In order to create prototypes for future projects, I setup an Creality Ender 3 printer,
-                                    which including building, calibrating, and modifying the printer. Along with this, I printed
-                                    (and still print) many miscellanious prints. This involved experimenting with and optimizing
-                                    a variety of settings, including the base GCode, in order to increase the print quality of
-                                    the various features in each print.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Caterpillar Compactor Electrification-->
-                    <div class="row">
-                        <div class="project-entry">
-                            <img src="images/compactor.png" alt="Caterpillar Compactor" style="width: 200px; margin: 0px 50px 0px 25px;">
-                            <div>
-                                <div class="project-name"><b>Caterpillar Compactor Electrification</b></div>
-                                <div class="project-team"><i>UW - Madison</i></div>
-                                <p>
-                                    As a part of a senior design course, I worked on a team that redesigned a Caterpillar
-                                    utility compactor to on electric motors instead of the original diesel engine.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Text-Based Game Generator-->
-                    <div class="row">
-                        <div class="project-entry">
-                            <img src="images/text-based-game.png" alt="Text-Based Game">
-                            <div>
-                                <div class="project-name"><b>Text-Based Game Generator</b></div>
-                                <div class="project-team"><i>Independent</i></div>
-                                <p>
-                                    As an independent project, I created a Java program that would select a random adventure from
-                                    a parameter file, and generate that adventure, including both pre-set and randomly generated events.
-                                    The parameter file could be easily edited so that additional scenarios could be added.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Cup-Flipping Robot-->
-                    <div class="row">
-                        <div class="project-entry">
-                            <img src="images/cup-flipping-robot.png" alt="Cup-Flipping Robot">
-                            <div>
-                                <div class="project-name"><b>Cup-Flipping Robot</b></div>
-                                <div class="project-team"><i>UW - Madison</i></div>
-                                <p>
-                                    In an introduction to robotics course, I worked on a team that created a wheeled mobile robot that
-                                    could find a table edge and following it, while also sensing whether a cup was in front of the robot
-                                    and flipping it. The control application was written with Python on a Raspberry Pi.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--University Book Store Loyalty App-->
-                    <div class="row">
-                        <div class="project-entry">
-                            <img src="images/book-store-loyalty.png" alt="Book Store Loyalty Logo">
-                            <div>
-                                <div class="project-name"><b>The University Book Store Loyalty App</b></div>
-                                <div class="project-team"><i>UW - Madison</i></div>
-                                <p>
-                                    As a part of a software engineering course, I worked on a team that developed a loyalty app for the
-                                    University Book Store.  It was an integrated web application built with Vue.js which displayed the
-                                    user’s points, the store’s social media feeds, and information about the loyalty program.                                        
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Straw-Rocket Launcher-->
-                    <div class="row">
-                        <div class="project-entry">
-                            <img src="images/straw-rocket-launcher.png" alt="Straw-Rocket Launcher">
-                            <div>
-                                <div class="project-name"><b>Straw-Rocket Launcher</b></div>
-                                <div class="project-team"><i>UW - Madison</i></div>
-                                <p>
-                                    As part of an introductory engineering class, we designed and manufactured a prototype
-                                    hydraulic launcher that launched a drinking straw for use in middle school science classes.
-                                    We worked with the STEM Education Coalition, who funded the project, and set our design specifications.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Semi-Autonomous Snow Blower-->
-                    <div class="row">
-                        <div class="project-entry">
-                            <img src="images/semi-auto-sb.png" alt="Semi-Autonomous Snow Blower">
-                            <div>
-                                <div class="project-name"><b>Semi-Autonomous Snow Blower</b></div>
-                                <div class="project-team"><i>Wausau InvenTeams</i></div>
-                                <p>
-                                    As part of the Wausau InvenTeam, I helped design and manufacture a prototype semi-autonomous
-                                    snow blower using a grant from the Lemelson-MIT InvenTeams program. The prototype was presented
-                                    at EurekaFest 2014 on the Massachusetts Institute of Technology (MIT) campus.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </li>
+          <li class="item">
+            <input type="radio" id="radio_email" name="basic_carousel" value="PyPi Email Listener"/>
+            <label class="label_email" for="radio_email">PyPi Email Listener</label>
+            <div class="content content_email">
+              <span class="picto"></span>
+              <h1>PyPi Email Listener</h1>
+              <h2>Independent</h2>
+              <p>
+                &emsp;To help compartmentalize functionality for an SMS-based event alert app
+                (which was to be named Meeper, but due to AT&T raining on my parade, it was never finished),
+                I created a Python package for listening in an email folder and scraping and processing
+                incoming emails. Additionally, the EmailResponder class was included for a simple, pain-free
+                way of responding to the processed emails. The package was
+                <a href="https://pypi.org/project/email-listener/" target="_blank">published to PyPi</a>, where it seems at least
+                a few other people have found a use for it. The Github repo can be found
+                <a href="https://github.com/njdreikosen/email_listener" target="_blank">here</a>.
+              </p>
             </div>
-        </div>          
-    </body>
+          </li>
+          <li class="item">
+            <input type="radio" id="radio_cat" name="basic_carousel" value="CAT Compactor Electrification"/>
+            <label class="label_cat" for="radio_cat">CAT Compactor Electrification</label>
+            <div class="content content_cat">
+              <span class="picto"></span>
+              <h1>Caterpillar Compactor Electrification</h1>
+              <h2>UW - Madison</h2>
+              <p>
+                &emsp;As a part of a senior design course, I worked on a team that redesigned a Caterpillar
+                utility compactor to on electric motors instead of the original diesel engine.
+              </p>
+            </div>
+          </li>
+          <li class="item">
+            <input type="radio" id="radio_cup" name="basic_carousel" value="Cup-Flipping Robot"/>
+            <label class="label_cup" for="radio_cup">Cup-Flipping Robot</label>
+            <div class="content content_cup">
+              <span class="picto"></span>
+              <h1>Cup-Flipping Robot</h1>
+              <h2>UW - Madison</h2>
+              <p>
+                &emsp;In an introduction to robotics course, I worked on a team that created a wheeled mobile robot that
+                could find a table edge and following it, while also sensing whether a cup was in front of the robot
+                and flipping it. The control application was written with Python on a Raspberry Pi.
+              </p>
+            </div>
+          </li>
+          <li class="item">
+            <input type="radio" id="radio_loyalty" name="basic_carousel" value="Loyalty Mobile App"/>
+            <label class="label_loyalty" for="radio_loyalty">Loyalty Mobile App</label>
+            <div class="content content_loyalty">
+              <span class="picto"></span>
+              <h1>The University Book Store Loyalty App</h1>
+              <h2>UW - Madison</h2>
+              <p>
+                &emsp;As a part of a software engineering course, I worked on a team that developed a loyalty app for the
+                University Book Store.  It was an integrated web application built with Vue.js which displayed the
+                user’s points, the store’s social media feeds, and information about the loyalty program.
+              </p>
+            </div>
+          </li>
+          <li class="item">
+            <input type="radio" id="radio_straw" name="basic_carousel" value="Straw-Rocket Launcher"/>
+            <label class="label_straw" for="radio_straw">Straw-Rocket Launcher</label>
+            <div class="content content_straw">
+              <span class="picto"></span>
+              <h1>Straw-Rocket Launcher</h1>
+              <h2>UW - Madison</h2>
+              <p>
+                &emsp;As part of an introductory engineering class, we designed and manufactured a prototype
+                hydraulic launcher that launched a drinking straw for use in middle school science classes.
+                We worked with the STEM Education Coalition, who funded the project, and set our design specifications.
+              </p>
+            </div>
+          </li>
+          <li class="item">
+            <input type="radio" id="radio_snowblower" name="basic_carousel" value="Snow Blower"/>
+            <label class="label_snowblower" for="radio_snowblower">Snow Blower</label>
+            <div class="content content_snowblower">
+              <span class="picto"></span>
+              <h1>Semi-Autonomous Snow Blower</h1>
+              <h2>Wausau InvenTeams</h2>
+              <p>
+                &emsp;As part of the Wausau InvenTeam, I helped design and manufacture a prototype semi-autonomous
+                snow blower using a grant from the Lemelson-MIT InvenTeams program. The prototype was presented
+                at EurekaFest 2014 on the Massachusetts Institute of Technology (MIT) campus.
+              </p>
+            </div>
+          </li>
+          <li class="item">
+            <input type="radio" id="radio_misc" name="basic_carousel" value="Misc. Projects"/>
+            <label class="label_misc" for="radio_misc">Misc. Projects</label>
+            <div class="content content_misc">
+              <span class="picto"></span>
+              <h1>Misc. Projects</h1>
+              <h2>3D Printer Setup and Projects</h2>
+              <p>
+                &emsp;In order to create prototypes for future projects, I setup an Creality Ender 3 printer,
+                which including building, calibrating, and modifying the printer. Along with this, I design
+                and print many miscellanious projects, including coasters, hat hooks, and Lego display mounts.
+                This involved experimenting with and optimizing a variety of settings, including the base GCode,
+                in order to increase the print quality of the various features in each print.
+              </p>
+              <h2>Text-Based Game Generator</h2>
+              <p>
+                &emsp;As an independent project, I created a Java program that would select a random text-based adventure from
+                a parameter file, and generate that adventure, including both pre-set and randomly generated events.
+                The parameter file could be easily edited so that additional scenarios could be added.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="middle-border"></div>
+      <div id="right-zone"></div>
+    </div>
+  </body>
 </html>

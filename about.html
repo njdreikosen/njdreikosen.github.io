@@ -1,119 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>About</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="custom_stylesheet.css">
-        <script src="https://kit.fontawesome.com/d5c6ce3996.js" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="control.js"></script>
-    </head>
+  <head>
+    <title>About</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="navigation.css">
+    <link rel="stylesheet" type="text/css" href="about.css">
+  </head>
 
-    <body>
-        <div class="navigation">
-            <div class="brand">
-                <a href="index.html">Home</a>
+  <body>
+    <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
+    <label for="page-nav-toggle">
+      <svg class="icon--menu-toggle" viewBox="0 0 60 30">
+        <g class="icon-group">
+          <g class="icon--menu">
+            <path d="M 6 0 L 54 0" />
+            <path d="M 6 15 L 54 15" />
+            <path d="M 6 30 L 54 30" />
+          </g>
+          <g class="icon--close">
+            <path d="M 15 0 L 45 30" />
+            <path d="M 15 30 L 45 0" />
+          </g>
+        </g>
+      </svg>
+    </label>
+    <nav class="main-navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#!">Tutorials</a></li>
+      </ul>
+    </nav>
+    <div id="scene-title">About</div>
+    <div id="scene">
+      <div id="left-zone">
+        <ul class="list">
+          <li class="item">
+            <input type="radio" id="radio_education" name="basic_carousel" value="Education" checked="checked"/>
+            <label class="label_education" for="radio_education">Education</label>
+            <div class="content content_education">
+              <span class="picto"></span>
+              <h1>Education</h1>
+              <h2>University of Wisconsin - Madison</h2>
+              <ul>
+                <li>B.S. Mechanical Engineering</li>
+                <li>B.S. Computer Science</li>
+              </ul>
             </div>
-            <nav>
-                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-                <ul class="nav-list">
-                    <li>
-                        <a href="">About</a>
-                    </li>
-                    <li>
-                        <a href="experience.html">Experience</a>
-                    </li>
-                    <li>
-                        <a href="projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#!">Tutorials</a>
-                        <ul class="nav-dropdown">
-                            <li>
-                                <a href="#!">Tutorial #1</a>
-                            </li>
-                            <li>
-                                <a href="#!">Tutorial #2</a>
-                            </li>
-                            <li>
-                                <a href="#!">Tutorial #3</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    <div id="wrapper">
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-
-                <!--Contact-->
-                <div class="row">
-                    <div class="about-entry">
-                        <h1 class="about-h1">Contact</h1>
-                        <p>
-                            If you have any questions or would like a copy of my resume, please email
-                            me at example@gmail.com.
-                        </p>
-                    </div>
-                </div>
-
-                <!--Education-->
-                <div class="row">
-                    <div class="about-entry">
-                        <h1 class="about-h1">Education</h1>
-                        <h2>University of Wisconsin - Madison</h2>
-                        <ul>
-                            <li>
-                                B.S. Mechanical Engineering
-                            </li>
-                            <li>
-                                B.S. Computer Science
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!--Skills-->
-                <div class="row">
-                    <div class="about-entry">
-                        <h1 class="about-h1">Skills</h1>
-                        <h2 class="about-h2">Some Experience With:</h2>
-                        <ul>
-                            <li>
-                                Autodesk Inventor, AutoCAD, NX, and PLC Programming
-                            </li>
-                            <li>
-                                C++, Javascript, and Assembly
-                            </li>
-                        </ul>
-                        <h2 class="about-h2">More Experience With:</h2>
-                        <ul>
-                            <li>
-                                C, Git, Java, HTML, and CSS
-                            </li>
-                            <li>
-                                Solidworks, Soldering, and Prototyping
-                            </li>
-                        </ul>
-                        <h2 class="about-h2">Lots of Experience With:</h2>
-                        <ul>
-                            <li>
-                                Python, Bash, and Tera Term
-                            </li>
-                            <li>
-                                Autodesk Fusion
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+          </li>
+          <li class="item">
+            <input type="radio" id="radio_skills" name="basic_carousel" value="Skills"/>
+            <label class="label_skills" for="radio_skills">Skills</label>
+            <div class="content content_skills">
+              <span class="picto"></span>
+              <h1>Skills</h1>
+              <h2>Some Experience</h2>
+              <ul>
+                <li>Autodesk Inventor, AutoCAD, NX, and PLC Programming</li>
+                <li>C++, Javascript, and Assembly</li>
+              </ul>
+              <h2>More Experience</h2>
+              <ul>
+                <li>C, Git, Java, HTML, and CSS</li>
+                <li>Solidworks, Soldering, and Prototyping</li>
+              </ul>
+              <h2>Lots of Experience</h2>
+              <ul>
+                <li>Python, Bash, and Tera Term</li>
+                <li>Autodesk Fusion</li>
+              </ul>
             </div>
-        </div>
-    </div>          
-    </body>
+          </li>
+          <li class="item">
+            <input type="radio" id="radio_hobbies" name="basic_carousel" value="Hobbies"/>
+            <label class="label_hobbies" for="radio_hobbies">Hobbies</label>
+            <div class="content content_hobbies">
+              <span class="picto"></span>
+              <h1>Hobbies</h1>
+              <h2>Productive</h2>
+              <ul>
+                <li>Working on (and sometimes even finishing!) independent projects and prototyping</li>
+                <li>Reading (or listening to audiobooks), mostly fantasy and scifi</li>
+                <li>Baking, especially sourdough bread</li>
+                <li>Sports, including basketball, disc golf, and skiing</li>
+              </ul>
+              <h2>Guilty Pleasures</h2>
+              <ul>
+                <li>Collecting and building Legos</li>
+                <li>Play games (both board and video varieties)</li>
+                <li>Macerating gin (it's still a little boozy, but it's getting there)</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="middle-border"></div>
+      <div id="right-zone"></div>
+    </div>
+  </body>
 </html>
