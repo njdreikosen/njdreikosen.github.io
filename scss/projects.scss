@@ -6,7 +6,7 @@ $scene-height: 500px;
 $sections: las, email, cat, cup, loyalty, straw, snowblower, misc;
 
 $colors: (
-  las: #000000,
+  las: #a4a49c,
   email: #5b86d2,
   cat: #c69d52,
   cup: #94d356,
@@ -19,7 +19,7 @@ $colors: (
 );
 
 $pictograms: (
-  las: url('images/wcc_logo.png'),
+  las: url('images/las.png'),
   email: url('images/pypi.png'),
   cat: url('images/compactor.png'),
   cup: url('images/cup-flipping-robot.png'),

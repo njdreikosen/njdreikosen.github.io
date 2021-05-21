@@ -85,7 +85,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ label.label_las:before 
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url("images/wcc_logo.png");
+  background-image: url("images/las.png");
   background-position: center;
   background-size: 75% 75%;
   background-repeat: no-repeat;
@@ -199,14 +199,14 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_las .p
   height: 100px;
   min-height: 100px;
   width: 100px;
-  background-image: url("images/wcc_logo.png");
+  background-image: url("images/las.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin: auto auto 10px auto;
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_las h1 {
-  color: #000000;
+  color: #a4a49c;
   font-size: 30px;
   margin: 10px auto 0px auto;
 }
@@ -227,7 +227,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_las::-
   background-color: #fff;
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_las::-webkit-scrollbar-thumb {
-  background-color: #000000;
+  background-color: #a4a49c;
   border-radius: 5px;
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_email {
@@ -536,8 +536,8 @@ body #scene #left-zone .list li.item input[type=radio]:checked ~ label {
   animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_las {
-  color: #000000;
-  border-right: solid 4px #000000;
+  color: #a4a49c;
+  border-right: solid 4px #a4a49c;
 }
 body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_email {
   color: #5b86d2;
