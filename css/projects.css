@@ -85,7 +85,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ label.label_las:before 
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url("images/las.png");
+  background-image: url("../images/las.png");
   background-position: center;
   background-size: 75% 75%;
   background-repeat: no-repeat;
@@ -97,7 +97,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ label.label_email:befor
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url("images/pypi.png");
+  background-image: url("../images/pypi.png");
   background-position: center;
   background-size: 75% 75%;
   background-repeat: no-repeat;
@@ -109,7 +109,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ label.label_cat:before 
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url("images/compactor.png");
+  background-image: url("../images/compactor.png");
   background-position: center;
   background-size: 75% 75%;
   background-repeat: no-repeat;
@@ -121,7 +121,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ label.label_cup:before 
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url("images/cup-flipping-robot.png");
+  background-image: url("../images/cup-flipping-robot.png");
   background-position: center;
   background-size: 75% 75%;
   background-repeat: no-repeat;
@@ -133,7 +133,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ label.label_loyalty:bef
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url("images/book-store-loyalty.png");
+  background-image: url("../images/book-store-loyalty.png");
   background-position: center;
   background-size: 75% 75%;
   background-repeat: no-repeat;
@@ -145,7 +145,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ label.label_straw:befor
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url("images/straw-rocket-launcher.png");
+  background-image: url("../images/straw-rocket-launcher.png");
   background-position: center;
   background-size: 75% 75%;
   background-repeat: no-repeat;
@@ -157,7 +157,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ label.label_snowblower:
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url("images/semi-auto-sb.png");
+  background-image: url("../images/semi-auto-sb.png");
   background-position: center;
   background-size: 75% 75%;
   background-repeat: no-repeat;
@@ -169,7 +169,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ label.label_misc:before
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url("images/3d-printer.png");
+  background-image: url("../images/3d-printer.png");
   background-position: center;
   background-size: 75% 75%;
   background-repeat: no-repeat;
@@ -199,7 +199,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_las .p
   height: 100px;
   min-height: 100px;
   width: 100px;
-  background-image: url("images/las.png");
+  background-image: url("../images/las.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -242,7 +242,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_email 
   height: 100px;
   min-height: 100px;
   width: 100px;
-  background-image: url("images/pypi.png");
+  background-image: url("../images/pypi.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -285,7 +285,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_cat .p
   height: 100px;
   min-height: 100px;
   width: 100px;
-  background-image: url("images/compactor.png");
+  background-image: url("../images/compactor.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -328,7 +328,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_cup .p
   height: 100px;
   min-height: 100px;
   width: 100px;
-  background-image: url("images/cup-flipping-robot.png");
+  background-image: url("../images/cup-flipping-robot.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -371,7 +371,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_loyalt
   height: 100px;
   min-height: 100px;
   width: 100px;
-  background-image: url("images/book-store-loyalty.png");
+  background-image: url("../images/book-store-loyalty.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -414,7 +414,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_straw 
   height: 100px;
   min-height: 100px;
   width: 100px;
-  background-image: url("images/straw-rocket-launcher.png");
+  background-image: url("../images/straw-rocket-launcher.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -457,7 +457,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_snowbl
   height: 100px;
   min-height: 100px;
   width: 100px;
-  background-image: url("images/semi-auto-sb.png");
+  background-image: url("../images/semi-auto-sb.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -500,7 +500,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_misc .
   height: 100px;
   min-height: 100px;
   width: 100px;
-  background-image: url("images/3d-printer.png");
+  background-image: url("../images/3d-printer.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
