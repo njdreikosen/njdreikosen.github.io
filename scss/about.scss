@@ -14,9 +14,9 @@ $colors: (
 );
 
 $pictograms: (
-  education: url('images/education.png'),
-  skills: url('images/skills.png'),
-  hobbies: url('images/hobbies.png')
+  education: url('../images/education.png'),
+  skills: url('../images/skills.png'),
+  hobbies: url('../images/hobbies.png')
 );
 
 @function get-color($color-name) {

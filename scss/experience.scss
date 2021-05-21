@@ -15,10 +15,10 @@ $colors: (
 );
 
 $pictograms: (
-  xes: url('images/xes_logo.png'),
-  deere: url('images/deere_logo.png'),
-  dhs: url('images/dhs_logo.png'),
-  wcc: url('images/wcc_logo.png')
+  xes: url('../images/xes_logo.png'),
+  deere: url('../images/deere_logo.png'),
+  dhs: url('../images/dhs_logo.png'),
+  wcc: url('../images/wcc_logo.png')
 );
 
 @function get-color($color-name) {

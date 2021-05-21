@@ -19,14 +19,14 @@ $colors: (
 );
 
 $pictograms: (
-  las: url('images/las.png'),
-  email: url('images/pypi.png'),
-  cat: url('images/compactor.png'),
-  cup: url('images/cup-flipping-robot.png'),
-  loyalty: url('images/book-store-loyalty.png'),
-  straw: url('images/straw-rocket-launcher.png'),
-  snowblower: url('images/semi-auto-sb.png'),
-  misc: url('images/3d-printer.png')
+  las: url('../images/las.png'),
+  email: url('../images/pypi.png'),
+  cat: url('../images/compactor.png'),
+  cup: url('../images/cup-flipping-robot.png'),
+  loyalty: url('../images/book-store-loyalty.png'),
+  straw: url('../images/straw-rocket-launcher.png'),
+  snowblower: url('../images/semi-auto-sb.png'),
+  misc: url('../images/3d-printer.png')
 );
 
 @function get-color($color-name) {
