@@ -61,9 +61,6 @@ body #scene #left-zone #index-img {
 body #scene #left-zone h2, body #scene #left-zone p {
   margin: 10px auto auto auto;
 }
-body #scene #left-zone p {
-  font-style: italic;
-}
 body #scene #middle-border {
   background-color: #eee;
   height: 75%;
