@@ -50,8 +50,6 @@ body #scene #left-zone {
   display: flex;
   flex-direction: column;
   width: 350px;
-  /*align-items: flex-start;
-  justify-content: left;*/
 }
 body #scene #left-zone #index-img {
   width: 300px;
@@ -62,6 +60,9 @@ body #scene #left-zone #index-img {
 }
 body #scene #left-zone h2, body #scene #left-zone p {
   margin: 10px auto auto auto;
+}
+body #scene #left-zone p {
+  font-style: italic;
 }
 body #scene #middle-border {
   background-color: #eee;
@@ -77,9 +78,6 @@ body #scene #right-zone {
   flex-grow: 0;
 }
 body #scene #right-zone #content {
-  /*position: relative;
-  left: $menu-width;
-  top: -$scene-height;*/
   width: 650px;
   height: 500px;
   overflow-y: auto;

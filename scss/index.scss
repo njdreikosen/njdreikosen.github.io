@@ -77,8 +77,6 @@ body{
       display: flex;
       flex-direction: column;
       width: $menu-width;
-      /*align-items: flex-start;
-      justify-content: left;*/
 
       #index-img {
         width: 300px;
@@ -89,6 +87,9 @@ body{
       }
       h2, p {
         margin: 10px auto auto auto;
+      }
+      p {
+        font-style: italic;
       }
     }
     #middle-border {
@@ -105,9 +106,6 @@ body{
       flex-grow: 0;
 
       #content {
-        /*position: relative;
-        left: $menu-width;
-        top: -$scene-height;*/
         width: $scene-width - $menu-width;
         height: $scene-height;
         overflow-y: auto;
