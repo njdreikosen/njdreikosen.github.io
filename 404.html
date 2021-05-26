@@ -1,66 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Home</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="custom_stylesheet.css">
-        <script src="https://kit.fontawesome.com/d5c6ce3996.js" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="control.js"></script>
-    </head>
+  <head>
+    <title>Tutorials</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/tutorials.css">
+  </head>
 
-    <body>
-        <div class="navigation">
-            <div class="brand">
-                <a href="index.html">Home</a>
-            </div>
-            <nav>
-                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-                <ul class="nav-list">
-                    <li>
-                        <a href="about.html">about</a>
-                    </li>
-                    <li>
-                        <a href="experience.html">Experience</a>
-                    </li>
-                    <li>
-                        <a href="projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <a href="tutorials.html">Tutorials</a>
-                        <ul class="nav-dropdown">
-                            <li>
-                                <a href="#!">Tutorial #1</a>
-                            </li>
-                            <li>
-                                <a href="#!">Tutorial #2</a>
-                            </li>
-                            <li>
-                                <a href="#!">Tutorial #3</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    <div id="wrapper">
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-
-                <!--Home Page-->
-                <div class="row">
-                    <div class="index-entry">
-                        <h1 class="index-h1">Page Not Found</h1>
-                        <h2 class="index-h1">This page may be under construction,<br>or not created yet.</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>          
-    </body>
+  <body>
+    <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
+    <label for="page-nav-toggle">
+      <svg class="icon--menu-toggle" viewBox="0 0 60 30">
+        <g class="icon-group">
+          <g class="icon--menu">
+            <path d="M 6 0 L 54 0" />
+            <path d="M 6 15 L 54 15" />
+            <path d="M 6 30 L 54 30" />
+          </g>
+          <g class="icon--close">
+            <path d="M 15 0 L 45 30" />
+            <path d="M 15 30 L 45 0" />
+          </g>
+        </g>
+      </svg>
+    </label>
+    <nav class="main-navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+    <div id="scene-title">404</div>
+    <div id="scene">
+      <img src='images/obiwan.gif' alt="These are not the droids you're looking for.">
+      <h1>This is not the page you're looking for...</h1>
+    </div>
+  </body>
 </html>

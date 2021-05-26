@@ -1,0 +1,79 @@
+/* Content Styling */
+$menu-width: 350px;
+$scene-width: 1000px;
+$scene-height: 500px;
+
+
+$colors: (
+  err404: #2E67F8,
+  primary: #fff,
+  secondary: #eee
+);
+
+@function get-color($color-name) {
+  @if map-has-key($colors, $color-name) {
+    @return map-get($colors, $color-name);
+  }
+ 
+  @else {
+    @warn "This color key doesn't exist."
+  }
+}
+
+body{
+  background: get-color(secondary);
+  font-family: "Tahoma";
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+  #scene {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: $scene-width;
+    height: $scene-height;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: get-color(primary);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12),
+                0 1px 2px rgba(0,0,0,0.24);
+    overflow: hidden;
+    
+    img {
+      border-radius: 25px;
+    }
+    h1 {
+      color: get-color(err404);
+      font-size: 30px;
+    }
+  }
+  @media only screen and (min-height: 650px) {
+    #scene-title {
+      position: absolute;
+      height: 60px;
+      left: 0;
+      right: 0;
+      margin: auto 0 auto 0;
+      padding-top: 10px;
+      font-size: 50px;
+      text-align: center;
+      text-decoration: underline;
+      color: #204060;
+    }
+    #scene {
+      top: 30px;
+    }
+  }
+  @media only screen and (max-height: 650px) {
+    #scene-title {
+      display: none;
+    }
+  }
+}

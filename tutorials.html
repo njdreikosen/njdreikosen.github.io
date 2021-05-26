@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tutorials</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/tutorials.css">
+  </head>
+
+  <body>
+    <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
+    <label for="page-nav-toggle">
+      <svg class="icon--menu-toggle" viewBox="0 0 60 30">
+        <g class="icon-group">
+          <g class="icon--menu">
+            <path d="M 6 0 L 54 0" />
+            <path d="M 6 15 L 54 15" />
+            <path d="M 6 30 L 54 30" />
+          </g>
+          <g class="icon--close">
+            <path d="M 15 0 L 45 30" />
+            <path d="M 15 30 L 45 0" />
+          </g>
+        </g>
+      </svg>
+    </label>
+    <nav class="main-navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+    <div id="scene-title">Tutorials</div>
+    <div id="scene">
+      <div id="left-zone">
+        <ul class="list">
+          <li class="item">
+            <input type="radio" id="radio_las" name="basic_carousel" value="Local App Server" checked="checked"/>
+            <label class="label_las" for="radio_las">Local App Server</label>
+            <div class="content content_las">
+              <span class="picto"></span>
+              <h1>Local App Server</h1>
+              <p>
+                There are two components to my Local Application Server - the 3D printed case and the React app.
+                You can create the entire ensemble, use only one of the case or the app, or use whatever bits
+                and pieces of each you want! Each component can be downloaded from their respective repositories,
+                where the instructions for setting up that component can be found. Links to both repositories can
+                be found below.
+              </p>
+              <ul>
+                <li>3D Printed Case: <a href="https://www.thingiverse.com/thing:4868724" target="_blank">https://www.thingiverse.com/thing:4868724</a></li>
+                <li>ReactJS App: <a href="https://github.com/njdreikosen/local_app_server" target="_blank">https://github.com/njdreikosen/local_app_server</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="middle-border"></div>
+      <div id="right-zone"></div>
+    </div>
+  </body>
+</html>
