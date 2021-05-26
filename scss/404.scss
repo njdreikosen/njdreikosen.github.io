@@ -32,7 +32,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: $scene-width;
     height: $scene-height;
     position: absolute;
@@ -51,7 +51,7 @@ body{
     }
     h1 {
       color: get-color(err404);
-      font-size: 30px;
+      font-size: 40px;
     }
   }
   @media only screen and (min-height: 650px) {
