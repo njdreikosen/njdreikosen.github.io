@@ -25,7 +25,7 @@ body #scene {
   overflow: hidden;
 }
 body #scene img {
-  border-radius: 25px;
+  border-radius: 50px;
 }
 body #scene h1 {
   color: #2E67F8;
