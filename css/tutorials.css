@@ -125,6 +125,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_las h2
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_las p {
   font-size: 16px;
   margin: 0px auto 0px auto;
+  max-width: 80%;
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_las ul {
   font-size: 18px;
